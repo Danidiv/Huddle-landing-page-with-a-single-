@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif, "Poppins";
+}
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Soft-Magenta);
+}
+
+p {
+  color: white;
+}
+
+body {
+  background-color: var(--Violet);
+  width: 100%;
+  height: 100%;
+}
+section {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.logo {
+  padding-top: 30px;
+  position: relative;
+}
+.logo img {
+  width: 200px;
+}
+
+.bg-desktop {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+}
+
+.dashbord {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+.mockup img {
+  margin: 3em 0;
+  width: 500px;
+  height: 300px;
+}
+.info {
+  padding: 82px 0 0 32px;
+  height: 430px;
+  width: 600px;
+}
+.info h1 {
+  letter-spacing: 2px;
+  color: white;
+  font-family: Poppins;
+}
+.info p {
+  margin-top: 2rem;
+  line-height: 1.8em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.btn {
+  margin-top: 50px;
+  padding: 15px 50px;
+  border-radius: 3rem;
+  border: none;
+}
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+  cursor: pointer;
+}
+
+/* Social Icon */
+.social-icon {
+  float: right;
+}
+.social-icon .icon {
+  color: wheat;
+  margin: 0 15px 0 15px;
+}
+.social-icon i {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+.social-icon .icon:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+  cursor: pointer;
+}
+/* Online Ava COde check */
+@media (max-width: 500px) {
+  body {
+    align-items: center;
+  }
+
+  .dashbord {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 50px; */
+  }
+
+  .logo img {
+    padding-left: 5px;
+    width: 170px;
+  }
+  .mockup img {
+    width: 100%;
+  }
+  .info {
+    width: 80%;
+    text-align: center;
+    /* padding-bottom: 100px; */
+  }
+  .btn {
+    padding: 10px 60px;
+    background-color: #fff;
+  }
+  .info P {
+  }
+  .social-icon {
+    margin: 0 5rem 0px 0;
+    padding: 10px;
+  }
+  .social-icon .icon {
+    margin: 5px;
+    padding-bottom: 40px;
+    line-height: 42px;
+  }
+  .social-icon i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+  }
+  picture,
+  img {
+    width: 100%;
+  }
+}
